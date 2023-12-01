@@ -1,9 +1,8 @@
 <?php
 $text = 'Мама мыла раму!';
+echo $text[5]; // Выведет символ 'ы'
+echo substr($text, 0, 1); // Выведет символ 'М'
+echo $text[4]; // Выведет символ 'а'
+echo $text[-2]; // Выведет символ 'у'
+echo mb_substr($text, -1, 1, 'UTF-8'); // Выведет символ '!'
 ?>
-
-<h1><?php echo mb_substr($text, 8, 1); ?></h1>
-<h1><?php echo mb_substr($text, 13, 1); ?></h1>
-<h1><?php echo mb_substr($text, 6, 1); ?></h1>
-<h1><?php echo mb_substr($text, 0, 1); ?></h1>
-<h1><?php echo substr($text, -1); ?></h1>
